@@ -1,0 +1,241 @@
+/* General Styles */
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --white-text-color: #ffffff;
+  --footer-text-color: #f4f4fd;
+  --hover-color: #404bbf;
+  --border-lines: #e7e9fc;
+}
+
+.page {
+  background-color: var(--white-text-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.basic {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+/* Page Header */
+/* Header Navigation */
+/* Header Logo */
+
+.page-nav {
+  background-color: var(--white-text-color);
+}
+
+.head-logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+
+/* Site navigation */
+
+.nav-text {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* .current {
+  color: var(--hover-color);
+} */
+
+.nav-text:hover,
+.nav-text:focus {
+  color: var(--hover-color);
+}
+
+/* Contacts nav */
+
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--primary-text-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--hover-color);
+}
+/* .address-link:focus {
+  color: var(--hover-color);
+} */
+
+/* Hero */
+
+.hero {
+  background-color: var(--title-text-color);
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Button Order */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--white-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.order {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.order:hover,
+.order:focus {
+  color: var(--white-text-color);
+  background-color: var(--hover-color);
+}
+/* Section 1 Service Filter */
+
+.features-hidden {
+  color: var(--title-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Section 2 Examples */
+
+/* Section 3 Our Team */
+
+.team {
+  background-color: var(--footer-text-color);
+}
+
+.team-item {
+  background-color: var(--white-text-color);
+}
+
+.team-title {
+  color: var(--title-text-color);
+}
+
+.worker-title {
+  color: var(--title-text-color);
+}
+
+.position-text {
+  color: var(--primary-text-color);
+}
+
+/* Footer style for studio */
+
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.studio-secondary {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.studio-footer {
+  color: var(--footer-text-color);
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+}
+
+/* Portfolio */
+/* Filter buttons */
+.filter {
+  color: var(--accent-color);
+  background-color: var(--footer-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--white-text-color);
+  background-color: var(--hover-color);
+}
+
+/* Services */
+
+.cards-header {
+  color: var(--title-text-color);
+}
+
+.cards-text {
+  color: var(--primary-text-color);
+}
+
+/* Колір параграфів #434455 */
+/* Heading color #2E2F42 */
+/* White text #ffffff */
+/* Web color #4D5AE5 */
+/* hero background color #2E2F42 */
+/* Background and foot Studio color #F4F4FD */
+/* Image borders color #E7E9FC */
+/* Portfolio nav color All */
+/* border lines #E7E9FC */
+/* Hover #404BBF */
