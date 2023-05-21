@@ -205,11 +205,7 @@ img {
   background-color: var(--white-text-color);
 }
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  visibility: hidden;
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
