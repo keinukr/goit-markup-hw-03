@@ -1,4 +1,4 @@
-/* General Styles */
+/* ------------- Default Styles ------------*/
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -6,13 +6,13 @@
   --white-text-color: #ffffff;
   --footer-text-color: #f4f4fd;
   --hover-color: #404bbf;
-  --border-lines: #e7e9fc;
+  --border-color: #e7e9fc;
 }
 
 .page {
   background-color: var(--white-text-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -23,22 +23,84 @@
 .link {
   text-decoration: none;
 }
-.basic {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-}
-/* Page Header */
-/* Header Navigation */
-/* Header Logo */
 
-.page-nav {
+.button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*---------------- Page Header ---------------*/
+
+/*------------ Navigation menu-------------*/
+
+.header-menu {
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
   background-color: var(--white-text-color);
 }
 
-.head-logo {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+}
+
+.logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -46,99 +108,128 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
-.logo {
+.logo-header {
   color: var(--title-text-color);
 }
 
-/* Site navigation */
-
-.nav-text {
+.menu-text {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* .current {
-  color: var(--hover-color);
-} */
-
-.nav-text:hover,
-.nav-text:focus {
+.menu-text:hover,
+.menu-text:focus {
   color: var(--hover-color);
 }
 
-/* Contacts nav */
-
-.address {
-  font-style: normal;
+.address-list {
+  display: flex;
+  align-items: center;
 }
 
-.address-link {
+.address-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address-text {
   color: var(--primary-text-color);
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.address-link:hover,
-.address-link:focus {
+.address-text:hover,
+.address-text:focus {
   color: var(--hover-color);
 }
-/* .address-link:focus {
-  color: var(--hover-color);
-} */
 
-/* Hero */
+/*------------Section 1 Hero --------------*/
 
 .hero {
+  padding: 188px 0;
   background-color: var(--title-text-color);
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
   color: var(--white-text-color);
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
-/* Button Order */
+/*-------------- Hero Button  --------*/
 
-.button {
-  color: var(--title-text-color);
-  background-color: var(--white-text-color);
+.hero-button {
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-}
-
-.order {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
 
-.order:hover,
-.order:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--white-text-color);
   background-color: var(--hover-color);
 }
-/* Section 1 Service Filter */
 
-.features-hidden {
+/*---------- Section 2 Service -------*/
+
+.service {
+  background-color: var(--white-text-color);
+}
+
+.visualy-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
-.title {
+.card-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.card-list {
+  display: flex;
+  gap: 24px;
+}
+
+.card-title {
+  margin-bottom: 8px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
@@ -146,96 +237,136 @@
   letter-spacing: 0.02em;
 }
 
-.text {
+.card-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* Section 2 Examples */
+/*---------- Section 3 Examples -------*/
 
-/* Section 3 Our Team */
+.examples {
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+  background-color: var(--white-text-color);
+}
+
+/* формула якщо не прогрузиться картинка то розмір елементу збережеться */
+
+.examples-card-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  border: 1px solid var(--stroke-colour);
+}
+
+.section-title {
+  margin-bottom: 72px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+/*---------- Section 4 Team ---------*/
 
 .team {
   background-color: var(--footer-text-color);
 }
 
-.team-item {
+.team-card-list {
+  flex-wrap: wrap;
+}
+
+.team-card-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--white-text-color);
 }
 
-.team-title {
-  color: var(--title-text-color);
+.team-card-text {
+  padding: 32px 16px;
+  text-align: center;
 }
 
-.worker-title {
-  color: var(--title-text-color);
-}
-
-.position-text {
-  color: var(--primary-text-color);
-}
-
-/* Footer style for studio */
+/*------------- Footer  ------------*/
 
 .footer {
+  padding: 100px 0;
   background-color: var(--title-text-color);
 }
 
-.studio-secondary {
-  color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-logo-text {
+  display: inline-block;
+  margin-bottom: 16px;
 }
-.studio-footer {
+
+.footer-logo-colour {
   color: var(--footer-text-color);
 }
 
 .footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--footer-text-color);
 }
 
-/* Portfolio */
-/* Filter buttons */
-.filter {
+/*------------- Portfolio ----------*/
+/* ----------Filter buttons----------- */
+
+.filter-menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+
+  background-color: var(--white-text-color);
+}
+
+.filter-list {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   color: var(--accent-color);
   background-color: var(--footer-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.filter:hover,
-.filter:focus {
+.filter-btn:hover,
+.filter-btn:focus {
+  border: 1px solid transparent;
   color: var(--white-text-color);
   background-color: var(--hover-color);
 }
 
-/* Services */
+/*---------- Services cards ------------*/
 
-.cards-header {
-  color: var(--title-text-color);
+.service-card-list {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
-.cards-text {
-  color: var(--primary-text-color);
+.service-card-item {
+  width: calc((100% - 48px) / 3);
 }
 
-/* Колір параграфів #434455 */
-/* Heading color #2E2F42 */
-/* White text #ffffff */
-/* Web color #4D5AE5 */
-/* hero background color #2E2F42 */
-/* Background and foot Studio color #F4F4FD */
-/* Image borders color #E7E9FC */
-/* Portfolio nav color All */
-/* border lines #E7E9FC */
-/* Hover #404BBF */
+.service-card-text {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  padding: 32px 16px;
+}
