@@ -205,10 +205,8 @@ img {
   background-color: var(--white-text-color);
 }
 .visually-hidden {
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
+  visibility: hidden;
+  display: none;
   width: 1px;
   color: var(--title-text-color);
   font-size: 56px;
