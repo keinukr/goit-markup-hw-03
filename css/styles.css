@@ -204,9 +204,9 @@ img {
 .service {
   background-color: var(--white-text-color);
 }
-.visualy-hidden .visualy-hidden {
-  position: fixed;
-  transform: scale(0);
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
