@@ -205,7 +205,6 @@ img {
   background-color: var(--white-text-color);
 }
 .visually-hidden {
-  visibility: hidden;
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
