@@ -204,12 +204,12 @@ img {
 .service {
   background-color: var(--white-text-color);
 }
-.visually-hidden {
+/* .visually-hidden {
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-}
+} */
 
 .visually-hidden {
   position: absolute;
