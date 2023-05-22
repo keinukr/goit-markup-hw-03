@@ -205,7 +205,6 @@ img {
   background-color: var(--white-text-color);
 }
 .hidden {
-  margin-bottom: 8px;
   width: 1px;
   color: var(--title-text-color);
   font-size: 56px;
