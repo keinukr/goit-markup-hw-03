@@ -204,23 +204,13 @@ img {
 .service {
   background-color: var(--white-text-color);
 }
-/* .visually-hidden {
+.hidden {
+  margin-bottom: 8px;
   width: 1px;
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-} */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
 
 .card-item {
